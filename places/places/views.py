@@ -9,7 +9,7 @@ import requests
 import json
 
 
-def PlaceList(request):
+def placeList(request):
     queryset = Place.objects.all()
     context = list(queryset.values('id', 'name'))
     return JsonResponse(context, safe=False)
