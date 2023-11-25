@@ -21,4 +21,4 @@ def VariableCreate(request):
         variable = Place()
         variable.name = data_json["name"]
         variable.save()
-        return HttpResponse("successfully created variable")
+        return HttpResponse("successfully created place")
